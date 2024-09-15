@@ -8,3 +8,4 @@ Remove-ItemProperty -Path 'HKLM:\SYSTEM\ControlSet001\Control\Terminal Server\Wi
 Remove-ItemProperty -Path 'HKLM:\SYSTEM\ControlSet002\Control\Terminal Server\WinStations\RDP-Tcp' -Name $name -ErrorAction SilentlyContinue
 Write-Host Restart the service
 restart-service TermService -force
+
